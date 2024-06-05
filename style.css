@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    background-color: rgb(2, 11, 22);
+    display: inline;
+}
+
+header{
+    height: 100px;
+    width: auto;
+    animation: toRightt 0.9s;
+    background-color: rgba(19, 36, 53, 0.541);
+    box-shadow: 0px 1px 100px 1px rgb(0, 0, 0);
+}
+
+header .nav-bar{
+    display: flex;
+    animation: toRightt 0.9s;
+}
+
+header .nav-bar img{
+    height: 70px;
+    border-radius: 14px;
+    box-shadow: 0px 1px 190px white;
+    display: inline-flex;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+header .nav-bar img:hover{
+    transform: scale(1.02);
+}
+
+.nav-links{
+    margin-top: 5px;
+    padding-top: 15px;
+    display: flex;
+    width: 100%;
+}
+
+.nav-links input{
+    height: 40px;
+    width: 220px;
+    margin-left: 20px;
+    padding-left: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    font-style: italic; 
+    border-radius: 13px;
+    border: none;  
+    outline: none;
+}
+
+.links{
+    display: inline;
+    margin-left: 20px;
+    margin-bottom: 11px;
+    padding-top: 10px;
+    width: 100%;
+    cursor: default;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 90px;
+    transition: 0.2s;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    box-shadow: 0px 1px 100px rgb(0, 0, 0);
+    font-size: 19px;
+}
+
+main{
+    display: flex;
+    margin-top: 140px;
+}
+
+main #turn{
+    background-color: rgb(2, 11, 22);
+    margin-top: 180px;
+    height: 300px;
+    width: 300px;
+    transform: matrix(1, 0.15, 0, 1.3, 1, 10);
+    cursor: default;
+    animation: toRight 0.8s;
+}
+
+main #turn h1{
+    color: white;
+    font-size: 130px;
+    text-align: center;
+    padding-top: 50px;
+    float: right;
+    transform: scale(1, 2);
+}
+
+main #on{
+    background-color: rgb(2, 11, 22);
+    height: 300px;
+    width: 300px;
+    transform: matrix(1, -0.15, 0, 1.3, 9, 10);
+    margin-top: 180px;
+    border-right:  3px solid rgb(228, 208, 32);
+    cursor: default;
+    animation: toLeft 0.8s;
+}
+
+main #on button{
+    background-color: rgb(2, 11, 22);
+    box-shadow: none;
+    border: none;
+    float: right;
+    margin-top: 80px;
+}
+
+main #on button h1{
+    color: white;
+    font-size: 130px;
+    transform: scale(1, 2);
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+main .credits{
+    background-color: rgb(2, 11, 22);
+    margin: auto;
+    margin-top: 300px;
+    margin-left: 95px;
+    animation: toTop 1.2s;
+    cursor: default;
+}
+
+main .credits h2{
+    color: white;
+    font-weight: 300;
+    font-size: 45px;
+    cursor: default;
+}
+
+main .credits h4{
+    color: white;
+    padding-top: 45px;
+    font-size: 14px;
+    color: rgb(228, 208, 32);
+    font-weight: 500;
+    cursor: default;
+}
+
+main .credits p{
+    padding-bottom: 8px;
+    color: white;
+    font-weight: 800;
+    cursor: default;
+}
+
+.bottom-section .details{
+    margin-top: 220px;
+    cursor: default;
+}
+
+.bottom-section .details h2{
+    color: white;
+    text-align: center;
+}
+
+.info-cards{
+    display: flex;
+}
+
+.info-card{
+    background-color: rgba(54, 54, 54, 0.295);
+    height: 60vh;
+    width: 60vh;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 24px;
+    transition: 0.5s;
+    cursor: default;
+}
+
+.info-card:hover{
+    box-shadow: 0px 1px 30px rgba(255, 255, 255, 0.432);
+    
+}
+
+.info-card img{
+    height: 300px;
+    margin: auto;
+    position: relative;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 50px;
+    border-radius: 8px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.info-card img:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 1px 30px rgba(255, 255, 255, 0.432);
+}
+
+.info-card .info-text{
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: rgb(206, 206, 206);
+    display: flex;
+    cursor: default;
+}
+
+.more-details{
+    margin: auto;
+    margin-top: 70px;
+    display: inline-flex;
+}
+
+.more-details .peek{
+    padding: 50px;
+    width: 900px;
+    height: 500px;
+}
+
+.more-details .peek img{
+    width: 900px;
+    height: 500px;
+    border-radius: 14px;
+}
+
+.peek-info{
+    color: rgb(206, 206, 206);
+    margin: auto;
+    font-size: 17px;
+    font-weight: 500;
+    word-break: inherit;
+    
+}
+
+.peek-info p{
+    margin-left: 75px;
+    margin-top: 320px;
+    text-align-last: left;
+    
+}
+
+.peek-info a{
+    color: rgb(206, 206, 206);
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.peek-info a:hover{
+    text-decoration: underline;
+}
+
+.more-detailss{
+    margin: auto;
+    margin-top: 70px;
+    display: inline-flex;   
+    margin-top: 50px;
+}
+
+.more-detailss .peeek{
+    padding: 50px;
+    width: 900px;
+    height: 500px;
+    margin-right: 80px;
+}
+
+.more-detailss .peeek img{
+    width: 900px;
+    height: 500px;
+    border-radius: 14px;
+}
+
+.peeek-info{
+    color: rgb(206, 206, 206);
+    margin: auto;
+    font-size: 17px;
+    font-weight: 500;
+    word-break: inherit;
+    float: left;
+    
+}
+
+.peeek-info p{
+    margin-left: 55px;
+    margin-top: 320px;
+    text-align-last: left;
+    
+}
+
+.peeek-info a{
+    color: rgb(206, 206, 206);
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.peeek-info a:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1040px) {
+    .links a{
+        width: auto;
+        margin: auto;
+    }       
+
+    .credits{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .links{
+        margin-top: -20px;
+    }
+
+    .links a{
+        display: block;
+        margin: 5px;
+    }
+
+    .credits{
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .credits{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .credits{
+        margin-right: 25px;
+    }
+}
+
+@keyframes toRight{
+    from{
+        transform: translateX(-700px);
+    }
+    to{
+        transform: translateX(0px);
+        transform: matrix(1, 0.15, 0, 1.3, 1, 10);
+    }
+}
+
+@keyframes toLeft{
+    from{
+        transform: translateX(750px);
+    }
+    to{
+        transform: translateX(0px);
+        transform: matrix(1, -0.15, 0, 1.3, 9, 10);
+    }
+}
+
+@keyframes toTop{
+    from{
+        transform: translateY(750px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes toRightt{
+    from{
+        transform: translateX(-1750px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
